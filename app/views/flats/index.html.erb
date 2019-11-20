@@ -7,10 +7,9 @@
          <%= image_tag("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&dpr=1&auto=format&fit=crop&w=416&h=312&q=60")%>
           <div class="card-trip-infos">
             <h2><%= flat.name %></h2>
-              <p><%= flat.description %></p>
               <p><%= flat.address %></p>
-              <p><%= flat.number_of_guests%></p>
-              <p><%= flat.price_per_night%></p>
+              <span><i class="fas fa-user-friends"></i><%= flat.number_of_guests%></span>
+              <span><i class="fas fa-euro-sign"></i><%= flat.price_per_night%></span>
           </div>
           <div class="bottom">
             <span id="blue">More Info</span>
