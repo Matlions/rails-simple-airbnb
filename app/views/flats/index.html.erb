@@ -12,9 +12,10 @@
               <span><i class="fas fa-euro-sign"></i><%= flat.price_per_night%></span>
           </div>
           <div class="bottom">
-            <span id="blue">More Info</span>
-            <span id="yellow">Edit</span>
-            <span id="red">Remove</span>
+            <span><%= link_to "More Info", new_flat_path, class: 'p-3 mb-2 text-primary'  %></span>
+            <span><%= link_to "Edit", new_flat_path, class: 'p-3 mb-2 text-warning'  %></span>
+            <span><%= link_to "Remove", new_flat_path, class: 'p-3 mb-2 text-danger'  %></span><span></span>
+
           </div>
         </div>
       <% end %>

@@ -17,7 +17,8 @@
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success mr-2 my-2 my-sm-0" type="submit">Search</button>
-    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Add Flat</button>
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><%= link_to "Add Flat", new_flat_path %></button>
+
   </form>
 </nav>
     <%= yield %>

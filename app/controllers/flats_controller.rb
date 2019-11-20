@@ -21,7 +21,7 @@ class FlatsController < ApplicationController
   def create
     @flat = Flat.new(flat_params)
     if @flat.save
-      redirect_to flats_path
+      redirect_to flats_path(@flat)
     else
       render :new
     end
@@ -33,7 +33,7 @@ class FlatsController < ApplicationController
 
   def update
     if @flat.update(flat_params)
-      redirect_to flat_path(@flat)
+      redirect_to flat_path(@flat), notice: 'Flat updated with success'
     else
       render :edit
     end
@@ -41,7 +41,7 @@ class FlatsController < ApplicationController
 
   def destroy
     @flat.destroy
-    redirect to flats_path
+    redirect to flats_path, notice: 'Flat destroyed with success'
   end
 
 private
