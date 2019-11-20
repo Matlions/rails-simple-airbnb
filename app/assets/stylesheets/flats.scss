@@ -6,7 +6,6 @@
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 33.333%;
-  padding: .75rem;
   margin-bottom: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -17,6 +16,11 @@
   width: 100%;
   object-fit: cover;
 
+}
+
+img {
+  margin: 0px;
+  padding: 0px;
 }
 
 .card-trip h2 {
@@ -36,3 +40,25 @@
   padding: 16px;
 }
 
+.card-trip-infos {
+  background-color: #F8F9FA;
+}
+
+#blue {
+  color: #0C7DFF;
+}
+
+#yellow {
+  color: #FFC62E;
+  padding-right: 6px ;
+  padding-left: 6px;
+}
+
+#red {
+  color: #DC3645;
+}
+
+.bottom {
+  border-top: 1px solid rgba(160,160,160,0.2);
+  padding: 16px 24px;
+}

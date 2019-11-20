@@ -1,5 +1,5 @@
 <div class="container mt-3">
-  <h1 class= "text-center">Delux's Flat</h1>
+  <h1 class= "text-left ml-4">All our Flats</h1>
 
     <div class ="row">
       <% @flats.each do |flat| %>
@@ -11,11 +11,11 @@
               <p><%= flat.address %></p>
               <p><%= flat.number_of_guests%></p>
               <p><%= flat.price_per_night%></p>
-              <div class="bottom">
-              More Info
-              Edit
-              Remove
-              </div>
+          </div>
+          <div class="bottom">
+            <span id="blue">More Info</span>
+            <span id="yellow">Edit</span>
+            <span id="red">Remove</span>
           </div>
         </div>
       <% end %>
